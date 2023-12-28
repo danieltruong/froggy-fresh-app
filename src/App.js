@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { FrogNavBarHeader3, NewFrogsCollection } from "./ui-components";
+import "./App.css";
+import frogHeaderPic from "./assets/images/frogHeaderPic.jpg";
+import { withAuthenticator } from "@aws-amplify/ui-react";
 
-function App() {
+function App({ user, signOut }) {
+  const frogNavBarHeader3Overrides = {
+    "403618143_1392773568283732_3797741273867155381_n 1": {
+      src: frogHeaderPic,
+    },
+    image: {
+      src: user?.attributes?.profile,
+    },
+    Button: {
+      onClick: signOut,
+    },
+  };
+
   return (
     <div className="App">
+      <FrogNavBarHeader3 overrides={frogNavBarHeader3Overrides} width="100%" />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <NewFrogsCollection />
       </header>
     </div>
   );
 }
 
-export default App;
+export default withAuthenticator(App);

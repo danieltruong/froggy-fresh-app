@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-froggyfreshapp-staging-225650-authRole",
+      "UnauthRoleArn": "arn:aws:iam::380069215548:role/amplify-froggyfreshapp-staging-225650-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::380069215548:role/amplify-froggyfreshapp-staging-225650-authRole",
+      "Region": "ca-central-1",
+      "DeploymentBucketName": "amplify-froggyfreshapp-staging-225650-deployment",
+      "UnauthRoleName": "amplify-froggyfreshapp-staging-225650-unauthRole",
+      "StackName": "amplify-froggyfreshapp-staging-225650",
+      "StackId": "arn:aws:cloudformation:ca-central-1:380069215548:stack/amplify-froggyfreshapp-staging-225650/e55d2e70-9ec1-11ee-8443-02c6c9ccf2aa",
+      "AmplifyAppId": "d6wl7vmwnf1r0"
+    },
+    "categories": {
+      "auth": {
+        "froggyfreshapp": {}
+      }
+    }
+  }
+}
