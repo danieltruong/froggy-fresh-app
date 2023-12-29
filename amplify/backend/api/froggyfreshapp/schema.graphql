@@ -4,4 +4,4 @@ type Frog @model @auth(rules: [{allow: public}]) {
   price: Float
   description: String
   imageUrl: String
-} 
+}
